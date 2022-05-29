@@ -18,7 +18,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Error loading .env file")
 	}
-	port := os.Getenv("PORT")
+	port := os.Getenv("APP_PORT")
 
 	go services.SendMessage()
 
