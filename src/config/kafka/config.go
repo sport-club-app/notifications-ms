@@ -18,7 +18,7 @@ func KafkaConfig() (*kafka.Conn, *kafka.Reader) {
 	}
 	broker_kafka := os.Getenv("BROKER_KAFKA")
 
-	topic := "partner-contact-topic"
+	topic := "partner-contact"
 	partition := 0
 	groupId := "partners-group-id"
 	broker := broker_kafka
